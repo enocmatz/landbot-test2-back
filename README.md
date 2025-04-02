@@ -17,6 +17,16 @@ Landbot Challenge
 - APP tests: Cover business logic (framework-independent)
     - pytest
 
+#Docker
+- Docker image can be build using `build_docker_image_dev.sh` or `build_docker_image_prod.sh`
+- Docker compose can be used to run the app in dev or prod mode
+- Default is dev mode 
+- Prod mode should have .env file with the format:
+    - SLACK_TOKEN=<token>
+    - DEBUG=False
+- Dev mode the same but with DEBUG=True and the name should be .env.dev
+- Docker in production mode have HEALTHCHECK to check if the app is running
+
 ## Performance Considerations
 ### Slack Integration
 Currently implements synchronous requests for simplicity. Two potential optimization paths:
