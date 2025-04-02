@@ -1,5 +1,4 @@
-# Project Name
-Landbot Challenge 
+# Landbot Backend Challenge 
 
 ## Configuration
 - Slack token should be in environment variable `SLACK_TOKEN`
@@ -17,7 +16,7 @@ Landbot Challenge
 - APP tests: Cover business logic (framework-independent)
     - pytest
 
-#Docker
+## Docker
 - Docker image can be build using `build_docker_image_dev.sh` or `build_docker_image_prod.sh`
 - Docker compose can be used to run the app in dev or prod mode
 - Default is dev mode 
