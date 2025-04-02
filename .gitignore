@@ -1,0 +1,10 @@
+__pycache__
+.env 
+.env.local
+.env.development
+.env.dev
+.env.production
+.env.test
+.env.test.local
+.pytest_cache
+*/__pycache__
